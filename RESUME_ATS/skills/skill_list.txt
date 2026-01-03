@@ -1,0 +1,21 @@
+python
+java
+c++
+sql
+mysql
+postgresql
+django
+flask
+fastapi
+machine learning
+deep learning
+nlp
+tensorflow
+pytorch
+aws
+azure
+docker
+kubernetes
+git
+linux
+rest api
