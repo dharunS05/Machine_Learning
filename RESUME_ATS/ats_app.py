@@ -3,15 +3,11 @@ import joblib
 
 
 import spacy
-import subprocess
-import sys
 
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    # Download model if missing
-    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-    nlp = spacy.load("en_core_web_sm")
+
+
+nlp = spacy.load("en_core_web_sm")
+
 
 
 from extraction.text_extractor import extract_text
@@ -65,6 +61,7 @@ if st.button("Predict ATS Result"):
         st.write(f"ATS Score: {ats_score} / 100")
         st.write("Features:", features)
         st.write("Missing Skills:", missing)
+
 
 
 
