@@ -1,11 +1,15 @@
+# Core app packages
 streamlit==1.52.2
 pdfplumber==0.11.8
 python-docx==1.2.0
 PyMuPDF==1.26.7
 nltk==3.9.2
-spacy>=3.7.2
+spacy>=3.8.0
 sentence-transformers==5.2.0
 scikit-learn==1.8.0
 xgboost==3.1.2
 joblib==1.5.3
 rich==14.2.0
+
+# SpaCy English model installed during build
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
