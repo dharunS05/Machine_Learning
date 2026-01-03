@@ -9,7 +9,7 @@ from similarity.similarity_engine import semantic_similarity
 from features.feature_builder import build_features
 
 # Load trained model
-model_path = r"Upload Your Model Path"   # Need to Add Model Path
+model_path = r"RESUME_ATS/Trained_model/ats_model.pkl"   # Need to Add Model Path
 model = joblib.load(model_path)
 
 st.title("Smart Resume ATS Predictor")
@@ -52,4 +52,5 @@ if st.button("Predict ATS Result"):
         st.write(f"ATS Score: {ats_score} / 100")
         st.write("Features:", features)
         st.write("Missing Skills:", missing)
+
 
